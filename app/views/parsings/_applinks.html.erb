@@ -1,1 +1,17 @@
+<% @app_links.each do |link| %>
+<div id="content-box">
+  <h4>Property:</h4>
+  <p> <%= link[0] %></p>
+  <h4> Name: </h4>
+  <p><%= link[1] %></p>
+  <h4>Content:</h4>
+  <p><%= link[2] %></p>
+</div>
+<% end %>
+
+
+
+
+
+
 <%= raw ap @app_links %>

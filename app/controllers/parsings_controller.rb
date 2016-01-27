@@ -29,9 +29,10 @@ class ParsingsController < ApplicationController
       metas = doc.css('meta')
 
       metas.each do |meta|
+        property = meta['property']
         name = meta['name']
         content = meta['content']
-        @app_links << [name, content]
+        @app_links << [property, name, content]
       end
     end
     render 'new'
